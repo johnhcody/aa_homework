@@ -1,7 +1,7 @@
 class Map
 
-    def initialize 
-        @map = Array.new 
+    def initialize
+        @map = Array.new
     end
 
     def set(key, value)
@@ -77,3 +77,6 @@ puts "------"
 p m.display
 puts "------"
 p m.delete(3)
+puts "------"
+p m.set(2, "a")
+puts "------"
