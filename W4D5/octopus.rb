@@ -20,8 +20,8 @@ def dominant_octopus(arr, &prc)
 
     mid = arr.length / 2
 
-    left = dominant_octopus(arr.take(mid))
-    right = dominant_octopus(arr.drop(mid))
+    left = dominant_octopus(arr.take(mid), &prc)
+    right = dominant_octopus(arr.drop(mid), &prc)
 
     merge(left,right, &prc)
 
